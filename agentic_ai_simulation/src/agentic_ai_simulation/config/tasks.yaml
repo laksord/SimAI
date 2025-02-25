@@ -1,0 +1,110 @@
+kid1_sim:
+  agent: kid1
+  description: >
+    Simulate your next actions in the following 5 hours that attribute
+    to reach your end goal. people around you are {enviroment}. make sure to take
+    into consideration the people around you and there current positions and future
+    plans and interactions that may occure between you and them. Be detailed and specific
+    and realistic. the place you are in has the following structure: {floor_plan}.
+    and makre sure to
+  expected_output: >
+    a json object with the following format:
+    {
+      "actions": "time stamped actions done in the following 5 hours",
+      "interactions": {
+        "agent_x" {
+          "interaction": "time stamped interaction that happened with agent_x",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_x should have to continue the simulation"
+        },
+        "agent_y" {
+          "interaction": "time stamped interaction that happened with agent_2",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_y should have to continue the simulation"
+        },
+      }
+    }
+kid2_sim:
+  agent: kid2
+  description: >
+    Simulate your next actions in the following 5 hours that attribute
+    to reach your end goal. people around you are {enviroment}. make sure to take
+    into consideration the people around you and there current positions and future
+    plans and interactions that may occure between you and them. Be detailed and specific
+    and realistic. the place you are in has the following structure: {floor_plan}.
+    and makre sure to
+  expected_output: >
+    a json object with the following format:
+    {
+      "actions": "time stamped actions done in the following 5 hours",
+      "interactions": {
+        "agent_x" {
+          "interaction": "time stamped interaction that happened with agent_x",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_x should have to continue the simulation"
+        },
+        "agent_y" {
+          "interaction": "time stamped interaction that happened with agent_2",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_y should have to continue the simulation"
+        },
+      }
+    }
+
+parent1_sim:
+  agent: parent1
+  description: >
+    Simulate your next actions in the following 5 hours that attribute
+    to reach your end goal. people around you are {enviroment}. make sure to take
+    into consideration the people around you and there current positions and future
+    plans and interactions that may occure between you and them. Be detailed and specific
+    and realistic. the place you are in has the following structure: {floor_plan}.
+    and makre sure to
+  expected_output: >
+    a json object with the following format:
+    {
+      "actions": "time stamped actions done in the following 5 hours",
+      "interactions": {
+        "agent_x" {
+          "interaction": "time stamped interaction that happened with agent_x",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_x should have to continue the simulation"
+        },
+        "agent_y" {
+          "interaction": "time stamped interaction that happened with agent_2",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_y should have to continue the simulation"
+        },
+      }
+    }
+parent2_sim:
+  agent: parent2
+  description: >
+    Simulate your next actions in the following 5 hours that attribute
+    to reach your end goal. people around you are {enviroment}. make sure to take
+    into consideration the people around you and there current positions and future
+    plans and interactions that may occure between you and them. Be detailed and specific
+    and realistic. the place you are in has the following structure: {floor_plan}.
+    and makre sure to
+  expected_output: >
+    a json object with the following format:
+    {
+      "actions": "time stamped actions done in the following 5 hours",
+      "interactions": {
+        "agent_x" {
+          "interaction": "time stamped interaction that happened with agent_x",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_x should have to continue the simulation"
+        },
+        "agent_y" {
+          "interaction": "time stamped interaction that happened with agent_2",
+          "shared_knowledge": "time stamped context regarding the interaction that also agent_y should have to continue the simulation"
+        },
+      }
+    }
+reporting_task:
+  agent: reporting_analyst
+  description: >
+    Analyze the context of the simulation you are given down to its minute details.
+    Alongside this detailed floorplan of the building's structure: {floor_plan}
+    Extract areas for improvements in the structure of the building.
+    Extract bottlenecks in the structure of the building
+
+  expected_output: >
+    A fully fledge reports with the mains topics, each with a full
+    section of information, Including a complete detailed section for key improvements, bottlenecks and issues that arised from the structure of the building causing the life process to be less efficient.
+    Formatted as markdown without '```'
+  output_file: report.md

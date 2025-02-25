@@ -1,0 +1,214 @@
+{
+    "rooms": [
+        {
+            "id": "R1",
+            "name": "Hallway",
+            "dimensions": {
+                "width": 1.5,
+                "length": 6
+            }
+        },
+        {
+            "id": "R2",
+            "name": "Living Room",
+            "dimensions": {
+                "width": 4.5,
+                "length": 6
+            }
+        },
+        {
+            "id": "R3",
+            "name": "Kitchen",
+            "dimensions": {
+                "width": 3.6,
+                "length": 4.2
+            }
+        },
+        {
+            "id": "R4",
+            "name": "Garage",
+            "dimensions": {
+                "width": 6,
+                "length": 6
+            }
+        },
+        {
+            "id": "R5",
+            "name": "Storage Room",
+            "dimensions": {
+                "width": 1.8,
+                "length": 2.4
+            }
+        },
+        {
+            "id": "R6",
+            "name": "Staircase",
+            "dimensions": {
+                "width": 1.2,
+                "length": 3.6
+            }
+        },
+        {
+            "id": "R7",
+            "name": "Bedroom 1",
+            "dimensions": {
+                "width": 3.6,
+                "length": 4.2
+            }
+        },
+        {
+            "id": "R8",
+            "name": "Bedroom 2",
+            "dimensions": {
+                "width": 3.6,
+                "length": 4.2
+            }
+        },
+        {
+            "id": "R9",
+            "name": "Bedroom 3",
+            "dimensions": {
+                "width": 3.6,
+                "length": 4.2
+            }
+        },
+        {
+            "id": "R10",
+            "name": "Bathroom 1",
+            "dimensions": {
+                "width": 1.8,
+                "length": 2.4
+            }
+        },
+        {
+            "id": "R11",
+            "name": "Bathroom 2",
+            "dimensions": {
+                "width": 1.8,
+                "length": 2.4
+            }
+        },
+        {
+            "id": "R12",
+            "name": "Attached Bathroom",
+            "dimensions": {
+                "width": 1.8,
+                "length": 2.4
+            }
+        }
+    ],
+    "connections": [
+        {
+            "from": "Hallway",
+            "to": "Living Room"
+        },
+        {
+            "from": "Hallway",
+            "to": "Kitchen"
+        },
+        {
+            "from": "Hallway",
+            "to": "Staircase"
+        },
+        {
+            "from": "Living Room",
+            "to": "Kitchen"
+        },
+        {
+            "from": "Kitchen",
+            "to": "Hallway"
+        },
+        {
+            "from": "Staircase",
+            "to": "Bedroom 1"
+        },
+        {
+            "from": "Staircase",
+            "to": "Bedroom 2"
+        },
+        {
+            "from": "Staircase",
+            "to": "Bedroom 3"
+        },
+        {
+            "from": "Bedroom 1",
+            "to": "Hallway"
+        },
+        {
+            "from": "Bedroom 2",
+            "to": "Hallway"
+        },
+        {
+            "from": "Bedroom 3",
+            "to": "Hallway"
+        },
+        {
+            "from": "Bedroom 3",
+            "to": "Attached Bathroom"
+        },
+        {
+            "from": "Attached Bathroom",
+            "to": "Bedroom 3"
+        },
+        {
+            "from": "Garage",
+            "to": "Storage Room"
+        },
+        {
+            "from": "Storage Room",
+            "to": "Garage"
+        }
+    ],
+    "entry_exit_points": [
+        {
+            "location": "Main Entrance",
+            "connected_to": "Hallway"
+        },
+        {
+            "location": "Garage Entrance",
+            "connected_to": "Garage"
+        },
+        {
+            "location": "Backdoor",
+            "connected_to": "Kitchen"
+        },
+        {
+            "location": "Emergency Exit",
+            "connected_to": "Backyard"
+        }
+    ],
+    "fire_safety_security_features": [
+        {
+            "location": "Each Bedroom",
+            "feature": "Smoke Detector"
+        },
+        {
+            "location": "Hallway",
+            "feature": "Smoke Detector"
+        },
+        {
+            "location": "Living Room",
+            "feature": "Smoke Detector"
+        },
+        {
+            "location": "Kitchen",
+            "feature": "Fire Extinguisher"
+        },
+        {
+            "location": "Garage",
+            "feature": "Fire Extinguisher"
+        },
+        {
+            "location": "Hallway",
+            "feature": "Fire Extinguisher"
+        },
+        {
+            "location": "Rear of House",
+            "feature": "Emergency Exit"
+        },
+        {
+            "location": "Front and Rear of House",
+            "feature": "Security Cameras"
+        }
+    ]
+}
