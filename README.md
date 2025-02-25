@@ -1,7 +1,7 @@
 # SimAI
 
 ## 🏢 AI-Powered Real Life Scenario Simulation Engine
-
+NOTE: While the Simulation engine is complete and ready to use, the FloorPlanProcessing.py needs to be turned into a CLI for ease of use alongside making the code dynamically edit the crew.py file and some issues may occur with the json expected output in the .yaml files where the json example is formatted with backslashes causing issues later on.
 ## 🔥 Overview
 
 This project is a cutting-edge **AI-driven simulation engine** that enables the simulation of **real-life scenarios inside real-world buildings** based on their **floor plans**. Utilizing AI agents, the system generates an **analytical report** that highlights:
