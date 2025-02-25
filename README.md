@@ -49,7 +49,7 @@ Create a `.env` file and add your API key:
 ```sh
    crewai run
 ```
-
+**Finally read your report in output directory**
 ---
 
 ## 📊 Usage
